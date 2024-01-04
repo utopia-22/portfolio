@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <!-- Poppin Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Project | Ahmad </title>
+    </head>
+<body>
+    <div class="container-fluid pxb-0">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <span class="material-icons-outlined">perm_identity</span>
+                    My Portfolio
+                </a>
+
+                <!--Dark Mode Toggle-->
+                <div class="dark-mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-text">Light/Dark Mode</span>
+                </div>
+
+                <!-- Add the Bootstrap navbar-toggler button for mobile -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="border border-primary offcanvas-header justify-content-between">
+                        <span class="material-icons-outlined">
+                            menu
+                        </span>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn btn-light" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn btn-light" href="/about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn btn-light" href="./project.html">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black btn btn-light" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+
+        <!--Project-->
+        <div class="container-fluid mt-5">
+            <h1 class="text-center hero-font display-4">My Projects</h1>
+
+            <div class="d-flex justify-content-center flex-row flex-wrap py-5">
+                <div class="card card-p col-md-3 col-sm-6 mx-3 mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Card image cap" style="height: 80%;">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>To-Do List App</strong></h5>
+                        <p class="card-text">Create a web-based to-do list application using HTML, CSS, and JavaScript. Users can add, edit, and delete tasks. It's a great project to practice your frontend skills and understand basic interactions between HTML, CSS, and JavaScript.</p>
+                        <button type="button" class="btn btn-primary btn-view-details center-button" data-toggle="modal" data-target="#myModal1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-p col-md-3 col-sm-6 mx-3 mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg" alt="Card image cap" style="height: 80%;">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Recipe Website</strong></h5>
+                        <p class="card-text">Build a recipe website where users can view, search, and filter recipes. Use HTML for structure, CSS for styling, and JavaScript for interactivity. This project helps you improve your frontend skills and design a user-friendly interface.</p>
+                        <button type="button" class="btn btn-primary btn-view-details center-button" data-toggle="modal" data-target="#myModal2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                <div class="card card-p col-md-3 col-sm-6 mx-3 mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/09/17/17/25/code-944499_1280.jpg" alt="Card image cap" style="height: 80%;">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Weather App</strong></h5>
+                        <p class="card-text">Develop a simple weather app that fetches weather data from an API and displays it to users based on their location or a search input. Use HTML for the layout, CSS for styling, and JavaScript for making API requests and updating the UI.</p>
+                        <button type="button" class="btn btn-primary btn-view-details center-button" data-toggle="modal" data-target="#myModal3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Modal 1 -->
+            <div class="modal" id="myModal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" style="color: black;">Project 1</h5>
+                            <span class="material-icons-outlined" data-dismiss="modal" style="color: black;">close</span>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="https://img.freepik.com/free-vector/best-online-training-exam-platform-banner-concept-internet-learning-digital-access-examination_107791-3442.jpg?w=740&t=st=1692676983~exp=1692677583~hmac=7bd3b4e20d7684183219a432d927d0299f84fb064bf96dcdb6b70652342e2ad8" alt="Sample Image" class="img-fluid">
+                            <br>
+                            <br>
+                            <p style="color: black;">Create a web-based task manager to practice frontend skills.</p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal 2 -->
+            <div class="modal" id="myModal2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" style="color: black;">Project 2</h5>
+                            <span class="material-icons-outlined" data-dismiss="modal" style="color: black;">close</span>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="https://img.freepik.com/free-vector/ways-find-employees-business_107791-3613.jpg?w=740&t=st=1692676964~exp=1692677564~hmac=e12658e46ca6e6992d94021e9083f7d20b071e64d872c0dce8169c23abef9b96" alt="Sample Image" class="img-fluid">
+                            <br>
+                            <br>
+                            <p style="color: black;"> Build a user-friendly recipe site using HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal 3 -->
+            <div class="modal" id="myModal3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" style="color: black;">Project 3</h5>
+                            <span class="material-icons-outlined" data-dismiss="modal" style="color: black;">close</span>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <img src="https://img.freepik.com/free-vector/vector-banner-website-development_107791-3339.jpg?w=740&t=st=1692676944~exp=1692677544~hmac=b79bc8b8bb46c7b2606bfb1555f44b3b5d7c2260f5aa14a7719f52cf9c175aaf" alt="Sample Image" class="img-fluid">
+                            <br>
+                            <br>
+                            <p style="color: black;"> Develop a weather app with API integration for location-based forecasts.</p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Project-->
+
+
+        <!--Footer-->
+        <footer class="text-center shadow-md-up p-3 bg-light rounded">
+            <div class="container ">
+                <h6 style="color: black;">Copyright &copy; 2023 Ahmad Portfolio.</h6>
+            </div>
+        </footer>
+        <!--End Footer-->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
